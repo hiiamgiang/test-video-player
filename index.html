@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3U8</title>
+</head>
+
+<body>
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+  <video id="my-video" class="video-js vjs-default-skin" muted controls preload="auto" width="640" height="264">
+    <source
+      src="../videos/test/video.m3u8"
+      type="application/x-mpegURL">
+  </video>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = videojs('my-video');
+      player.play();
+    });
+  </script>
+</body>
+
+</html>
